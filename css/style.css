@@ -1,0 +1,386 @@
+.customer-page {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    padding: 20px 5px;
+    line-height: 1.42857;
+}
+.customer-page textarea, .customer-page input[type="text"], .customer-page input[type="password"], .customer-page input[type="datetime"], .customer-page input[type="datetime-local"], .customer-page input[type="date"], .customer-page input[type="month"], .customer-page input[type="time"], .customer-page input[type="week"], .customer-page input[type="number"], .customer-page input[type="email"], .customer-page input[type="url"], .customer-page input[type="search"], .customer-page input[type="tel"], .customer-page input[type="color"], .customer-page .uneditable-input {
+    height: 30px;
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #dadada;
+    border-radius: 0;
+    box-shadow: none;
+    color: #7a7a7a;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    padding: 0 10px;
+    resize: none;
+    transition: all 200ms ease-in 0s;
+    vertical-align: middle;
+    width: 100%;
+}
+.customer-page .form-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+.customer-page .form-group label {
+	color: #555;
+    display: inline-block;
+    font-weight: 700;
+    margin-right: 20px;
+    max-width: 100%;
+    vertical-align: middle;
+    width: 20%;
+    margin-bottom: 0;
+    text-align: right;
+}
+.customer-page .form-group input {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    width: 65%;
+    margin-top: 0;
+    outline: none;
+}
+.customer-page .form-group input:focus, .customer-page .form-group textarea:focus { 
+    border-color: #66afe9;
+}
+.customer-name-section {
+    display: inline-block;
+    width: 65%;
+}
+.customer-page .form-group.jp-name input {
+    /*width: 32%;*/
+    width: 100%;
+    margin-right: 7px;
+}
+.customer-page .form-group.jp-name .customer-name-label {
+    vertical-align: top;
+    padding-top: 6px;
+}
+.customer-page .form-group.jp-name label {
+    padding-left: 0;
+}
+.customer-page .form-group .jobprogress-customer-type {
+	width: auto;
+}
+.customer-page .form-combine-select {
+    border: 1px solid #dadada;
+    height: 32px;
+    width: 65%;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+.customer-page .form-combine-select.active {
+    border-color: #66afe9; 
+}
+.customer-page .select2-container { 
+    width: 65% !important;
+}
+.customer-page textarea {
+    width: 65%;
+    min-height: 100px;
+    margin-bottom: 0;
+}
+.customer-page .form-combine-select .select2-container {
+    width: 25% !important;
+}
+.customer-page .select2-container--default .select2-selection--single {
+    background-image:         linear-gradient(to bottom, #f9f9f9 0px, #f4f4f4 100%);
+    background-image: -webkit-linear-gradient(to bottom, #f9f9f9 0px, #f4f4f4 100%);
+    width: 100%;
+    height: 30px !important;
+    vertical-align: middle;
+    font-weight: bold;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+    border-color: #dadada;
+}
+.customer-page .select2-container .select2-selection--multiple {
+    height: auto;
+    line-height: normal;
+    min-height: 34px;
+    border-color: #dadada;
+    border-radius: 0;
+}
+.select2-results__option {
+    color: #666;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+.customer-page .form-combine-select .select2-container--default .select2-selection--single { 
+    border: none;
+    border-right: 1px solid #dadada;
+}
+.customer-page .select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 30px;
+}
+.customer-page .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 28px;
+}
+.customer-page .col-5 {
+    width: 49.5%;
+    display: inline-block;
+    vertical-align: top;
+}
+.customer-page .form-group.col-5 input {
+    width: 50%;
+}
+.customer-page .col-5 label {
+    width: 40.5%;
+}
+.customer-page .col-5 label.state, .customer-page .col-5 label.country {
+    width: 27%;
+}
+.customer-page .form-group input[type= "checkbox"] {
+    width: auto;
+}
+.customer-page .form-group.col-5 .select2-container {
+    width: 44% !important;
+}
+.customer-page .form-group span {
+    position: relative;
+}
+.customer-page .form-group label.error, .customer-page .form-group span label.error  {
+   bottom: 0;
+   color: #c81b1b;
+   left: 0;
+   position: absolute;
+   right: 0;
+   top: 32px;
+   width: auto;
+   text-align: left;
+}
+.customer-page label.error {
+    color: #c81b1b;
+    margin: 5px 0;
+    padding-left: 22%;
+    display: block;
+    font-weight: normal;
+    width: auto;
+    text-align: left;
+}
+.customer-page .col-5.address-field-col label.error {
+    padding-left: 45%;
+}
+.customer-page .required-sign {
+    color: #c81b1b;
+}
+.customer-page .additional-val {
+    border: 1px solid #dadada;
+    border-radius: 50%;
+    float: right;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.customer-page .additional-val span {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: center;
+    vertical-align: middle;
+    width: 28px;
+    position: relative;
+}
+.customer-page .additional-val.remove span:after {
+    background: #357ebd none repeat scroll 0 0;
+    content: "";
+    height: 3px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 2px;
+    width: 12px;
+}
+.customer-page .form-group label.has-outer-label {
+    text-align: left;
+    width: auto;
+}
+.customer-page .btn {
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    -webkit-user-select: none;
+            user-select: none;
+}
+.customer-page .btn-blue {
+    background-color: #428bca;
+    border-color: #357ebd;
+    color: #fff;
+}
+.customer-page .btn.active, .customer-page .btn:active {
+    background-image: none;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.125) inset;
+    outline: 0 none;
+}
+.customer-page .btn-blue.active, .customer-page .btn-blue:active, .customer-page .btn-blue:focus, .customer-page .btn-blue:hover {
+    background-color: #3071a9;
+    border-color: #285e8e;
+    color: #fff;
+}
+ .btn-blue.active,  .btn-blue:active {
+    background-image: none;
+}
+.customer-page .btn-grey {
+    background: #6c6c6c none repeat scroll 0 0;
+    color: #fff;
+}
+.customer-page .btn-grey:hover {
+    background: #5f5f5f none repeat scroll 0 0;
+}
+.customer-page .btn-grey:active, .customer-page .btn-grey:focus {
+    background: #585858 none repeat scroll 0 0;
+}
+.customer-page .form-group input.phone-number-field {
+    width: 45%; 
+    padding: 0px 5px; 
+    border: none;
+}
+.customer-page .form-group input.extension-field {
+    width: 25%; 
+    padding: 0px 5px; 
+    border: none; 
+    border-left: 1px solid rgb(204, 204, 204); 
+    float: right;
+}
+.text-center {
+    text-align: center;
+}
+.alert-msg {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+.alert-msg strong { 
+    color: inherit;
+}
+.alert-msg-danger {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+}
+.alert-msg-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+}
+.select2-results__options {
+ text-align:left;
+}
+.form-group #captchaimage, .form-group #captcha {
+    width: 65%;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.form-group #captcha { 
+    width: 250px;
+    margin-left: 22%;
+}
+img {
+    border: 1px solid #eee;
+}
+@media(max-width: 768px) {
+    .customer-page .form-group label, .customer-page .col-5 label.state, .customer-page .col-5 label.country {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+    .customer-page .customer-name-section .col-5 {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .customer-page .col-5.address-field-col label.error {
+        padding-left: 0;
+    }
+    .form-group #captcha {
+        margin-left: 0;
+    }
+    .customer-page .form-group label.has-outer-label {
+        width: auto;
+        margin-bottom: 0;
+    }
+    .customer-page .col-5 {
+        width: 39.5%;
+    }
+    .customer-page .form-group.col-5 input {
+        width: 75%;
+    }
+    .customer-page .form-group.col-5 .select2-container {
+        width: 62% !important;
+    }
+    .customer-page .additional-email label {
+        display: none;
+    }
+    .customer-page .error, .customer-page label.error {
+        padding-left: 0;
+    }
+}
+@media(max-width: 480px) {
+    .customer-page .form-group.jp-name input {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .customer-page .form-group input, .customer-page .col-5, .customer-page .form-group.col-5 input, .customer-page textarea {
+        width: 100%;
+    }
+    .customer-page .form-group.email-section input {
+        width: 65%;    
+    }
+    .customer-page .form-combine-select .select2-container {
+        width: 100% !important;
+        border: 1px solid #dadada;
+    }
+    .customer-page .form-combine-select {
+        border: none;
+        height: auto;
+    }
+    .customer-page .form-group input.phone-number-field {
+        width: 100%; 
+        padding: 0 5px; 
+        border: 1px solid #dadada;
+        margin: 5px 0;
+    }
+    .customer-page .form-group input.extension-field {
+        width: 100%; 
+        padding: 0 5px; 
+        border: 1px solid #dadada; 
+        float: none;
+    } 
+    .customer-page .form-group.col-5 .select2-container, .customer-page .select2-container {
+        width: 100% !important;
+    }
+    .customer-page .form-combine-select .select2-container--default .select2-selection--single {
+        border: none;
+    }
+    .customer-name-section {
+        width: 100%;
+    }
+    .customer-page .form-group.additional-emails input {
+        width: 65%;
+    }
+}
+.customer-page .additional-val{
+    position: absolute;
+    right: 0;
+    top: 0;
+}

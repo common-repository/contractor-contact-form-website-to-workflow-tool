@@ -1,0 +1,212 @@
+/* sortable fields ui */
+.sortable-fields-wrap .ui-sortable-placeholder {
+    height: 32px;
+    border-radius: 6px;
+    width: 300px;
+    margin-bottom: 20px;
+    background-color: #FCFAF2;
+}
+.sortable-fields-wrap .ui-state-default {
+    border: 0;
+    background-color: transparent;
+    display: flex;
+}
+.field-required-setting {
+    display: flex;
+    flex: 0 0 200px;
+    align-self: flex-start;
+    margin-left: 15px;
+    margin-top: 8px;
+}
+.field-required-setting > span {
+    white-space: nowrap;
+}
+.field-required-setting .field-visiblity-checkbox {
+    width: auto;
+    margin-right: 10px;
+}
+.settings-desc {
+    color: #777;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    max-width: 550px;
+}
+.sortable-field-item {
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 15px;
+    border: 1px solid #b8d3eb;
+    border-radius: 6px;
+    background-color: #f7f8fc;
+    width: 300px;
+    cursor: move;
+}
+.multi-field-wrap {
+    flex-wrap: wrap;
+    padding: 4px 0;
+}
+.multi-field-inner {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+.multi-field-items-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 4px;
+}
+.multi-field-item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    flex: 0 0 50%;
+    width: 50%;
+}
+.multi-field-item .field-name {
+    flex: 0 0 auto;
+    font-size: 13px;
+}
+.multi-field-item .field-visibility {
+    flex: 0 0 18px;
+    margin-right: 8px;
+    margin-left: unset;
+    margin-top: 4px;
+}
+.drag-icon {
+    flex: 0 0 30px;
+    width: 30px;
+    height: 32px;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    align-self: center;
+    color: #b8b8b8;
+}
+.drag-icon svg {
+    width: 22px;
+}
+.field-name {
+    flex: 1 1 auto;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-size: 14px;
+}
+.field-visibility {
+    flex: 0 0 40px;
+    margin-left: auto;
+}
+/* checkbox ui */
+.field-visiblity-checkbox {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.checkbox-style:before {
+    content: "";
+    border: 1px solid #428BCA;
+    border-radius: 3px;
+    box-sizing: border-box;
+    height: 18px;
+    width: 18px;
+    display: block;
+    background-color: #428BCA;
+}
+.field-visiblity-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    margin: 0;
+    background-color: #428BCA;
+    border-radius: 50%;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    display: block;
+    width: 16px;
+    height: 16px;
+    outline: none;
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-transition: opacity .3s,transform .3s;
+    transition: opacity .3s,transform .3s;
+    z-index: 1;
+}
+.field-visiblity-checkbox input[type="checkbox"] + .checkbox-style:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-left: none;
+    border-top: none;
+    margin-top: -6px;
+    margin-left: -3px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    box-sizing: border-box;
+}
+.field-visiblity-checkbox input[type="checkbox"]:checked + .checkbox-style:before {
+    background-color: transparent;
+    border-color: #cdced1;
+}
+.field-visiblity-checkbox input[type="checkbox"]:checked + .checkbox-style:after {
+    opacity: 0;
+}
+.field-visiblity-checkbox input[type="checkbox"]:disabled {
+    cursor: not-allowed;
+}
+.field-visiblity-checkbox input[type="checkbox"]:disabled + .checkbox-style:before {
+    opacity: 0.4;
+}
+.form-settings-submit p {
+    display: inline-block;
+}
+.form-settings-submit .settings-loader {
+    display: none;
+    vertical-align: middle;
+}
+.form-settings-submit .settings-loader img {
+    width: 44px;
+    height: 44px;
+}
+/* theme usage setting */
+.theme-setting h2 {
+    font-size: 23px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.use-theme-option {
+    height: 32px;
+    cursor: unset;
+}
+.use-theme-option .field-name {
+    padding-left: 12px;
+}
+.use-theme-option .checkbox-style:before {
+    background-color: transparent;
+    border-color: #cdced1;
+}
+.use-theme-option .field-visiblity-checkbox input[type="checkbox"]:checked + .checkbox-style:before {
+    border-color: #428BCA;
+    background-color: #428BCA;
+}
+.use-theme-option .field-visiblity-checkbox input[type="checkbox"]:checked + .checkbox-style:after {
+    opacity: 1;
+}
+.hide-required-field {
+    display: none !important;
+}

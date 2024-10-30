@@ -1,0 +1,474 @@
+/* form ordering */
+.referred-src-col .form-control {
+    opacity: 0.7;
+    background-color: #f9f9f9;
+    cursor: not-allowed;
+}
+
+/* form new ui */
+.jps-customer-form-wrap {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #1d1e22;
+}
+.jps-customer-form-wrap label {
+    color: #1d1e22;
+}
+.jps-form-ui {
+    font-family: "Roboto", sans-serif;
+}
+.jps-customer-form-wrap * {
+    font-weight: 400;
+    box-sizing: border-box;
+}
+.jps-field-wrap {
+    margin-bottom: 25px;
+}
+.jps-standard-fieldset {
+    position: relative !important;
+}
+.jps-form-ui .jps-standard-fieldset label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #616161;
+}
+.jps-standard-fieldset label {
+    font-weight: normal !important;
+}
+.jps-standard-fieldset > label {
+    display: block;
+    margin-bottom: 5px !important;
+    color: #616161 !important;
+}
+.jps-field-required label:after {
+    content: '*';
+    color: #c81b1b;
+    margin-left: 1px;
+}
+.jps-form-ui .jps-standard-fieldset .form-control,
+.jps-form-ui .jp-referral-container .select2-search__field {
+    border: 1px solid #e6e9ee;
+    border-radius: 4px;
+    height: 36px;
+    font-size: 14px;
+    font-weight: normal;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 0;
+    width: 100%;
+    transition: unset;
+    color: #1d1e22;
+}
+.jps-form-ui .jp-referral-container .select2-search__field {
+    height: 32px;
+}
+.jps-standard-fieldset .form-control {
+    width: 100%;
+    margin: 0 !important;
+    font-weight: normal;
+}
+.jps-form-ui .jps-standard-fieldset .form-control:focus,
+.jps-form-ui .jp-referral-container .select2-search__field:focus {
+    border-color: #b8d3eb;
+    outline: 0 !important;
+    box-shadow: unset !important;
+}
+.jps-form-ui .jps-standard-fieldset textarea.form-control {
+    height: 120px;
+    resize: none;
+}
+.jps-standard-fieldset textarea.form-control {
+    min-height: 120px;
+    resize: none;
+}
+.jps-standard-fieldset label.error {
+    position: absolute;
+    bottom: -20px;
+    color: #c81b1b !important;
+    font-size: 12px !important;
+    margin: 0 !important;
+}
+.jps-field-required label.error:after {
+    content: "";
+}
+.jps-form-ui ::-webkit-input-placeholder { /* Edge */
+    color: #cdced1 !important;
+}  
+.jps-form-ui :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #cdced1 !important;
+}
+.jps-form-ui ::-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #cdced1 !important;
+}  
+.jps-form-ui ::placeholder {
+    color: #cdced1 !important;
+    opacity: 1 !important;
+}
+.jps-form-ui .select2-selection__placeholder {
+    color: #cdced1 !important;
+}
+.jps-form-ui .jps-selection-col {
+    position: relative;
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 5px;
+}
+.jps-selection-col {
+    position: relative;
+    display: inline-block;
+    margin: 5px 30px 0 0;
+}
+.jps-form-ui .jps-selection-col:last-child {
+    margin-right: 0;
+}
+.jps-form-ui .jps-selection-col input {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+.jps-form-ui .jps-selection-col label {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0;
+    padding-left: 25px;
+    cursor: pointer;
+}
+.jps-selection-col label {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.jps-field-required .jps-selection-col label:after {
+    content: "";
+}
+.jps-form-ui .jps-selection-col label:before {
+    background-image: url(../img/radio-hover.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    height: 18px;
+    width: 18px;
+}
+.jps-form-ui .jps-checkbox-col label:before {
+    background-image: url(../img/checkbox-hover.png);
+}
+.jps-form-ui .jps-selection-col label:hover:before {
+    background-position: center;
+}
+.jps-form-ui .jps-selection-col input:checked + label:before {
+    background-position: bottom;
+}
+.jps-form-ui .jps-checkbox-col input:not(checked) label:before {
+    background-position: top;
+}
+/* flex row structure */
+.jps-fxrow {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+[class^=jps-fxcol-],
+[class*=jps-fxcol-],
+.jps-fxcol {
+	position: relative;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.jps-fxcol {
+	-ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+.jps-fxcol-6 {
+	flex-basis: 50%;
+    max-width: 50%;
+}
+.jps-additional-field {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+}
+.jps-standard-fieldset .jps-field-add {
+    display: none;
+}
+.jps-standard-fieldset:last-child .jps-field-add {
+    display: -webkit-flex;
+    display: flex;
+}
+.jps-standard-fieldset:nth-child(5) .hideAddBtn {
+    display: none;
+}
+.jps-field-left {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding-right: 8px;
+}
+.jps-field-remove,
+.jps-field-add {
+    flex: 0 0 36px;
+    width: 36px;
+    height: 36px;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.jps-form-ui .jps-field-add {
+    color: #428bca !important;
+}
+.jps-form-ui .jps-field-remove svg {
+    fill: #c81b1b !important;
+}
+.jps-field-remove svg,
+.jps-field-add svg {
+    width: 24px;
+    fill: currentColor;
+}
+.jps-field-remove svg {
+    fill: #c81b1b;
+}
+.jps-field-remove:hover {
+    background-color: #ffdfdf;
+}
+.jps-field-wrap .jps-field-wrap {
+    margin-bottom: 0;
+    margin-top: 25px;
+}
+.jps-field-remove {
+    margin-left: 6px;
+    background-color: #ffdfdf;
+}
+.jps-field-add {
+    background-color: #cce7ff;
+}
+.billing-address-field {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.billing-address-field > label {
+    margin: 0 !important;
+}
+.jps-customer-form-wrap .jps-checkbox-col {
+    margin: 0 !important;
+    padding-top: 4px;
+    font-size: 0;
+}
+/* phone field */
+.jps-phone-field {
+    display: -webkit-flex;
+    display: flex;
+}
+.jps-phone-field .phone-num-type {
+    position: relative;
+    flex: 0 0 100px;
+}
+.jps-phone-field .phone-num-type select {
+    height: 100%;
+}
+.jps-phone-field .phone-num {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin: 0 8px !important;
+}
+.jps-phone-field .jps-extension-field {
+    flex: 0 0 150px;
+}
+/* captcha */
+.jps-captcha-inner {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+}
+.jps-captcha-inner .form-control {
+    flex: 0 0 200px;
+}
+#jp_captcha {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    flex: 0 0 150px;
+    background-color: #f7f8fc;
+    border-radius: 4px;
+}
+.captcha-invalid {
+    display: block !important;
+}
+.refresh-captcha {
+    margin-left: 10px;
+    cursor: pointer;
+}
+.refresh-captcha img {
+    width: 15px;
+}
+/* select */
+.jps-standard-fieldset .select2-container {
+    width: 100% !important;
+}
+.jps-field-disabled,
+.jps-field-disabled + .select2-container {
+    opacity: 0.6 !important;
+    pointer-events: none !important;
+    cursor: not-allowed !important;
+}
+.jps-form-ui .select2-container {
+    font-size: 14px !important;
+}
+.jps-form-ui .select2-container .select2-selection {
+    height: 36px;
+    border-color: #e6e9ee;
+    outline: 0;
+}
+.jps-form-ui .select2-container.select2-container--open .select2-selection,
+.jps-form-ui .select2-container .select2-dropdown {
+    border-color: #b8d3eb;
+}
+.jps-form-ui .select2-container--default .select2-selection .select2-selection__rendered {
+    padding-left: 12px;
+    line-height: 36px;
+    font-weight: normal !important;
+}
+.jps-form-ui .select2-container--default .select2-selection .select2-selection__arrow {
+    top: 50%;
+    margin-top: -13px;
+}
+.jps-form-ui .select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #f7f8fc;
+    color: #1d1e22;
+}
+.jps-form-ui .select2-container--default .select2-results__option[aria-selected=true] {
+    background-color: #deebff;
+}
+.jps-form-ui .select2-container--default .select2-selection--multiple {
+    height: 100%;
+    min-height: 36px;
+    font-size: 0;
+    padding-left: 12px;
+}
+.jps-form-ui .select2-container--default .select2-search--inline .select2-search__field {
+    margin: 0;
+    min-height: 34px;
+    font-size: 14px;
+}
+.jps-form-ui .select2-container--default .select2-selection--multiple .select2-selection__rendered {
+    line-height: normal;
+    font-weight: normal !important;
+    padding-left: 0;
+}
+.jps-form-ui .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #e9ebef;
+    border-color: #e6e9ee;
+    border-radius: 12px;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-left: 14px;
+    font-size: 13px;
+}
+.jps-form-ui .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    margin-right: 0;
+    margin-left: 5px;
+    flex: 0 0 15px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+}
+.jps-form-buttons  {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+}
+.jps-form-ui input[type="submit"] {
+    color: #fff !important;
+    background-color: #428bca !important;
+    border-color: #357ebd !important;
+    border: 1px solid transparent !important;
+    white-space: nowrap !important;
+    padding: 6px 12px !important;
+    font-size: 14px !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    line-height: 1.428571429 !important;
+    border-radius: 4px !important;
+    text-transform: uppercase !important;
+    min-width: 60px !important;
+    outline: 0 !important;
+    box-shadow: unset !important;
+}
+.jps-form-buttons input[type="submit"] {
+    cursor: pointer;
+}
+.jps-form-ui input[type="submit"]:hover {
+    color: #fff !important;
+    background-color: #3276b1 !important;
+    border-color: #285e8e !important;
+}
+.jps-form-ui .jps-form-buttons .btn-form-cancel {
+    text-transform: uppercase !important;
+    font-size: 14px !important;
+    color: #1d1e22 !important;
+    padding: 6px 12px !important;
+}
+.jps-form-buttons .btn-form-cancel {
+    cursor: pointer;
+    padding: 6px 12px;
+}
+@media(max-width: 576px) {
+    .jps-phone-field,
+    .jps-captcha-inner {
+        flex-wrap: wrap;
+    }
+    .jps-phone-field .phone-num-type,
+    .jps-phone-field .phone-num,
+    .jps-phone-field .jps-extension-field {
+        flex: 0 0 100%;
+    }
+    .jps-phone-field .phone-num {
+        margin: 8px 0 !important;
+    }
+    .jobprogress-customer-phone .jps-additional-field {
+        align-items: flex-end;
+    }
+    #jp_captcha {
+        margin-bottom: 8px;
+    }
+    .jps-captcha-inner .form-control {
+        flex: 0 0 80%;
+        flex: 0 0 calc(100% - 30px);
+    }
+}
+.jps-form-ui .select-multi-trades {
+    display: none;
+}
+.select-multi-trades {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+    font-size: 12px;
+    font-style: italic;
+    text-align: right;
+}
